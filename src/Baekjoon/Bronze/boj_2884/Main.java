@@ -1,11 +1,11 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_2884;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. H,M 입력받아 M으로 통일하기
