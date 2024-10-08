@@ -1,11 +1,11 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_1152;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. 공백의 갯수 출력
