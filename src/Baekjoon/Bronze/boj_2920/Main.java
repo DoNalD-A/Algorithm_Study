@@ -1,11 +1,10 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_2920;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. String S 입력받기
@@ -27,7 +26,7 @@ public class Solving {
         boolean isDescending = true;// i+1 < i
 
         for (int i = 1; i < iArray.length; i++) {
-            if (iArray[i-1] < iArray[i]) {
+            if (iArray[i - 1] < iArray[i]) {
                 isDescending = false;
             } else if (iArray[i - 1] > iArray[i]) {
                 isAscending = false;
@@ -37,7 +36,7 @@ public class Solving {
             System.out.println("ascending");
         } else if (isDescending) {
             System.out.println("descending");
-        }else{
+        } else {
             System.out.println("mixed");
         }
 
