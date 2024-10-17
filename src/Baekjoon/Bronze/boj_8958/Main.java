@@ -1,10 +1,10 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_8958;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. 테스트 케이스 개수 '정수'N이 주어진다

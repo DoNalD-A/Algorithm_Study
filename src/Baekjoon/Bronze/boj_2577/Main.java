@@ -1,4 +1,4 @@
-package Baekjoon.Bronze.boj2577;
+package Baekjoon.Bronze.boj_2577;
 
 import java.io.BufferedReader;
 import java.io.IOException;
