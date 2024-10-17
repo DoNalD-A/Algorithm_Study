@@ -1,10 +1,10 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_10809;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. 소문자 'String' s 입력받기
