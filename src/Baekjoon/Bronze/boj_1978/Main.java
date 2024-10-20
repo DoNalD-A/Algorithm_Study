@@ -13,7 +13,7 @@ public class Main {
          * 3. 각 수 T를 1~T로 나누고, 나머지가 0인 수가 2개 -> 소수로 판별 (remain을 2로 설정하고 0이 되면 반복문 종료(?)
          */
 
-//        1번. 전부
+//        1번. 전부 나누기
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        int N = Integer.parseInt(br.readLine());
 //
@@ -35,7 +35,7 @@ public class Main {
 //        }
 //        System.out.println(count);
 
-
+        //2번 소수가 2개 이상 찾아지면 반복문 멈추기
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
 
@@ -59,6 +59,9 @@ public class Main {
             }
         }
         System.out.println(count);
+
+        //소수 판별법(중요)
+        // N이 소수인지 확인할 때, N의 제곱근까지만 나누어보기
 
     }
 }
