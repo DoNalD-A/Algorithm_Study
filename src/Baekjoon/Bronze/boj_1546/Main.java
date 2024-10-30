@@ -1,9 +1,9 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_1546;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. 과묵 개수 (정수)N 입력받기
@@ -47,3 +47,4 @@ public class Solving {
 
     }
 }
+
