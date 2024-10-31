@@ -1,9 +1,9 @@
-package Baekjoon;
+package Baekjoon.Silver.boj_11659;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException{
         /*
          * 1. 수의 개수N, 합의 횟수 M을 입력 받는다
