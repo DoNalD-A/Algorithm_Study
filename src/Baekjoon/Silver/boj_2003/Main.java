@@ -1,10 +1,10 @@
-package Baekjoon;
+package Baekjoon.Silver.boj_2003;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. 배열 개수N, 구해야하는 합M 입력받기
