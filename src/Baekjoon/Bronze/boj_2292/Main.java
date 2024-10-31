@@ -1,8 +1,8 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_2292;
 
 import java.io.*;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. int N 입력받기
