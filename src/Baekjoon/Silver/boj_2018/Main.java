@@ -22,7 +22,7 @@ public class Main {
         int sum = 0;
         int count = 0;
 
-        while (true) {
+        while (end <= N) {
             if (sum < N) {
                 if (end == N) break;
                 sum += arr[end];
