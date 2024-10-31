@@ -1,8 +1,8 @@
-package Baekjoon;
+package Baekjoon.Silver.boj_2018;
 
 import java.io.*;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. N을 입력받고 배열 선언
