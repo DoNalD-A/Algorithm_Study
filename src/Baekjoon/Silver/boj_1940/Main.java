@@ -1,9 +1,8 @@
-package Baekjoon;
-
+package Baekjoon.Silver.boj_1940;
 import java.io.*;
 import java.util.*;
 
-public class Solving {
+public class Main {
     public static void main(String[] args) throws IOException {
         /*
          * 1. 재료의 개수 N, 필요한 수의 합 M 입력받기
@@ -51,23 +50,3 @@ public class Solving {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
