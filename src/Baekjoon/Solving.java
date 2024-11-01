@@ -1,52 +1,47 @@
 package Baekjoon;
 
-import java.io.*;
 import java.util.*;
+import java.io.*;
 
 public class Solving {
     public static void main(String[] args) throws IOException {
         /*
-         * 1. 재료의 개수 N, 필요한 수의 합 M 입력받기
-         * 2. 수 입력받아 배열에 넣기(sort or 넣으면서 정렬)
-         * 3. 투 포인터(각 포인터를 최소,최대값으로 설정)를 사용해 M값 하기
-         * 3-1. count = 0, sum = 0, start = 0, end = N
-         * 3-2. 종료조건: start==end
-         * 3-3. sum < M, sum == M, sum > M -> 3가지로 생각
-         * 4. cou t 출력
+         * 백준 1253번
+         * -> 음수 포함한 코드로 수정해보기
          */
 
-        // 1
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
-        int M = Integer.parseInt(br.readLine());
-
-        //2
-        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         int[] arr = new int[N];
-        for (int i = 0; i < N; i++) {
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        for(int i = 0; i<arr.length; i++){
             arr[i] = Integer.parseInt(st.nextToken());
         }
         Arrays.sort(arr);
 
-        //3
+
+        int goodIndex = arr.length - 1;
         int count = 0;
-        int start = 0;
-        int end = N-1;
 
-        //'고유한' 정수(중복 없기 때문에 start < end)
-        while (start < end) {
-            if (arr[start] + arr[end] < M) {
-                start++;
-            } else if (arr[start] + arr[end] > M) {
-                end--;
-            }else{
-                //'고유한' 정수(중복 없기 대문에 start, end 둘 다 변화하기)
-                count++;
-                start++;
-                end--;
+        //첫번째 for문 -> goodIndex 끝 인덱스부터 차례로 -1 하기
+        for (int i = 0; i < arr.length - 1; i++) {
+            int start = 0;
+            int end = goodIndex - 1;
+
+            //투 포인터로 사이값 중 2개 합==goodIndex 있는지 찾기
+            while (start < end) {
+                if ((long)arr[start] + arr[end] < arr[goodIndex]) {
+                    start++;
+                } else if ((long)arr[start] + arr[end] > arr[goodIndex]) {
+                    end--;
+                } else {
+                    count++;
+                    break;
+                }
             }
-        }
+            goodIndex--;
 
+        }
         System.out.println(count);
 
     }
