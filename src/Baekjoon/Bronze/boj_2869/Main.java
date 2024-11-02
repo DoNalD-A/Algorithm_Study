@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_2869;
 
 import java.util.*;
 import java.io.*;
@@ -6,9 +6,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         /*
-         * 1. 높이 V, 올라갈 높이 A, 미끄러지는 높이 B 입력 받기
-         * 2. day N 현재 높이: (A*N) - (B*(N-1))
-         * 2-1. 2번에서 구한 변수(presnetHeight) >= V인 경우 탈출하는 while문 탈출
+         * 1. 총 높이 / 하루 올라갈 수 있는 높이로 바로 계산 가능
          */
 
         // 1
