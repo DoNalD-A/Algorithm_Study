@@ -37,6 +37,5 @@ public class Main {
         //첫 날 올라간 A만큼 미리 계산했기 때문에 +1 해주기
         System.out.println(dayRequired + 1);
 
-
     }
 }
