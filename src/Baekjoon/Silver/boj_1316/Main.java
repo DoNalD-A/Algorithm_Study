@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.Silver.boj_1316;
 
 import java.io.*;
 import java.util.*;
