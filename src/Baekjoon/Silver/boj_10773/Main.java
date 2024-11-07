@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.Silver.boj_10773;
 
 import java.io.*;
 import java.util.*;
@@ -10,6 +10,7 @@ public class Main {
         /*
          * 1. 정수타입 Stack 선언하고, 정수 개수 N입력 받기
          * 2. if (0) -> pop / else -> push
+         * 3. sum에 모두 더하기 (for each문 사용해도 된다)
          */
 
         // 1
@@ -31,9 +32,6 @@ public class Main {
             sum += stack.pop();
         }
         System.out.println(sum);
-
-
-
 
     }
 }
