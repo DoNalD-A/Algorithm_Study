@@ -1,34 +1,64 @@
 package Baekjoon;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        /*
-         * 1. 카드의 개수 N 입력받기 + 큐 선언하고 값 추가
-         * 2. 제일 위 버리고, 그 다음 나오는 카드 제일 밑으로 넣기 반복
-         * 3. 1장 남을 때의 숫자 구하기
-         */
+    public static void main(String[] args) {
 
-        // 1
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        Queue<Integer> queue = new LinkedList<>();
-        for (int i = 1; i <= N; i++) {
-            queue.offer(i);
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        // 4 2 3
+        int N = Integer.parseInt(st.nextToken());
+        int D = Integer.parseInt(st.nextToken());
+        int X = Integer.parseInt(st.nextToken());
+        int[] arr = new int[N];
+
+        // 3 2 4 5
+        st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        // 2
-        while (queue.size() > 1) {
-            queue.poll();
-            if (queue.peek() != null) {
-                queue.offer(queue.poll());
+        System.out.println(arr[D-1]*N + (X-D));
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+        for (int test_case = 1; test_case <= T; test_case++) {
+
+            int N = sc.nextInt();
+            int D = sc.nextInt();
+            int X = sc.nextInt();
+            int[] arr = new int[N];
+
+//            StringTokenizer st = new StringTokenizer(sc.next(), " ");
+//            for (int i = 0; i < arr.length; i++) {
+//                //while (st.hasMoreTokens()) {
+////                arr[i] = Integer.parseInt(st.nextToken());
+//                arr[i] = Integer.parseInt(st.nextToken());
+
+            String tmp = sc.next();
+            for (int i = 0; i < tmp.length(); i += 2) {
+                arr[i] = Integer.parseInt(tmp.charAt(i) - '0');
             }
+
+            System.out.println("#" + test_case); //arr[D - 1] * N + (X - D));
+            System.out.println(arr[D - 1] * N + (X - D));
         }
-        System.out.println(queue.poll());
-
-
     }
 }
+}
 
+
+
+/*
+class Solution
+{
+ public static void main(String args[]) throws Exception
+ {
+   System.out.println("Hello World");
+ }
+}
+ */
