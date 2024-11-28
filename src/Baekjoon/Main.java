@@ -44,6 +44,7 @@ public class Main {
                 arr[i] = Integer.parseInt(tmp.charAt(i) - '0');
             }
 
+
             System.out.println("#" + test_case); //arr[D - 1] * N + (X - D));
             System.out.println(arr[D - 1] * N + (X - D));
         }
