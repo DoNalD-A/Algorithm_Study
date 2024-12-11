@@ -21,6 +21,7 @@ public class Main {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
+
         System.out.println(arr[D-1]*N + (X-D));
         Scanner sc = new Scanner(System.in);
 
