@@ -32,6 +32,7 @@ public class Main {
             int X = sc.nextInt();
             int[] arr = new int[N];
 
+
 //            StringTokenizer st = new StringTokenizer(sc.next(), " ");
 //            for (int i = 0; i < arr.length; i++) {
 //                //while (st.hasMoreTokens()) {
