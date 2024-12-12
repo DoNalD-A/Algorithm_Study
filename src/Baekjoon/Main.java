@@ -22,6 +22,7 @@ public class Main {
         }
 
 
+
         System.out.println(arr[D-1]*N + (X-D));
         Scanner sc = new Scanner(System.in);
 
