@@ -14,6 +14,8 @@ public class Solving {
         int N = Integer.parseInt(br.readLine());
         int[] arr = new int[N];
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
+
         for(int i = 0; i<arr.length; i++){
             arr[i] = Integer.parseInt(st.nextToken());
         }
