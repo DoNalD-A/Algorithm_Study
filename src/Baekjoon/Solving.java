@@ -26,6 +26,7 @@ public class Solving {
         int count = 0;
 
 
+
         //첫번째 for문 -> goodIndex 끝 인덱스부터 차례로 -1 하기
         for (int i = 0; i < arr.length - 1; i++) {
             int start = 0;
