@@ -21,8 +21,6 @@ public class Solving {
         }
         Arrays.sort(arr);
 
-
-
         int goodIndex = arr.length - 1;
         int count = 0;
 
