@@ -23,6 +23,7 @@ public class Solving2 {
                 break;
             }
 
+
             int[] arr = {a, b, c};
             Arrays.sort(arr);
 
