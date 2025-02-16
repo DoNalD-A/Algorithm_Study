@@ -10,6 +10,7 @@ public class Main {
         /*
         * 1. 수열의 수 N, 정수 X 입력받기
         * 2. 수열을 순회하며 X보다 작은 값 StringBuilder를 사용해 출력하기
+        *
         */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
