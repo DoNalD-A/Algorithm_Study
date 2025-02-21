@@ -1,5 +1,4 @@
-package Baekjoon;
-
+package Baekjoon.Bronze.boj_10804;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,8 +11,9 @@ public class Main {
          * 1. 크기 20인 배열 배열에 값 초기화
          * 2. 두 수를 입력받아 순서를 입력받아 두 수의 차이 크기의 배열 선언
          * 3. tmp[두 수 크기 차이]에 값 역순으로 받고 값 수정 후 배열 반환
-         * 4. 코드의 가독성을 위해 함수만 따로 분리*/
-
+         * 4. 코드의 가독성을 위해 함수만 따로 분리
+         * ** Scanner의 nextInt()는 개행문자를 기준으로 토큰을 입력 받는다
+         * ** Scanner를 Main에서 선언하고 다른 메서드에서 사용하려면 Scanner도 매개변수로 넣어줘야함*/
 
         // 1
         int[] arr = new int[20];
