@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.Bronze.boj_2441;
 
 import java.io.*;
 import java.util.Scanner;
