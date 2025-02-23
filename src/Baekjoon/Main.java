@@ -1,31 +1,36 @@
 package Baekjoon;
 
 import java.io.*;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         /*
-         * 1. max값이 갱신되면 index값 반환
+         * 1. 문자열 'S' 입력받기
+         * 2. 크기가 26(알파벳)인 배열 선언하여 각 문자 개수 세기
          **/
 
-        Scanner sc = new Scanner(System.in);
+        // 1
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String S = br.readLine();
 
-        int count = 1;
-        int index = -1;
-        int max = -1;
+        // 2
+        int[] alphaCount = new int[26];
 
-        for (int i = 0; i < 9; i++) {
-            int tmp = sc.nextInt();
-            if (tmp > max) {
-                max = tmp;
-                index = count;
+        for (int i = 0; i < S.length(); i++) {
+            int tmp = S.charAt(i);
+            int index = 97;
+            for (int j = 0; j < 26; j++) {
+                if (tmp == index) {
+                    alphaCount[j]++;
+                    break;
+                }
+                index++;
             }
-            count++;
         }
 
-        System.out.println(max);
-        System.out.println(index);
 
+        for (int i : alphaCount) {
+            System.out.print(i + " ");
+        }
     }
 }
