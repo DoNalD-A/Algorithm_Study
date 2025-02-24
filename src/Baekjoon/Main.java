@@ -9,6 +9,7 @@ public class Main {
          * 2. 크기가 26(알파벳)인 배열 선언하여 각 문자 개수 세기
          **/
 
+
         // 1
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String S = br.readLine();
