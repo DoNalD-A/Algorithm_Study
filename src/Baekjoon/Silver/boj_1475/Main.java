@@ -18,6 +18,7 @@ public class Main {
         for (int i = 0; i < 9; i++) {
             max = Math.max(max,arr[i]);
         }
+
         int nine = arr[9]/2;
         if (arr[9]%2==1) nine++;
         max = Math.max(max,nine);
