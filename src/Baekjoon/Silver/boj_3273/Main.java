@@ -15,6 +15,7 @@ public class Main {
 
         Arrays.sort(arr);
 
+
         while(lt < rt) {
             sum = arr[rt] + arr[lt];
 
