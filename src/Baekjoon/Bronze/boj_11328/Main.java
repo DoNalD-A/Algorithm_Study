@@ -33,6 +33,7 @@ public class Main {
             afArr[afStr.charAt(i) - 'a']++;
         }
 
+
         for(int i = 0; i < bfArr.length; i++) {
             if(bfArr[i] != afArr[i]) return "Impossible";
         }
