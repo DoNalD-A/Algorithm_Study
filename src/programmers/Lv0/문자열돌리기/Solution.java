@@ -1,4 +1,4 @@
-package Programmers.Lv0.문자열돌리기;
+package programmers.Lv0.문자열돌리기;
 
 import java.io.BufferedReader;
 import java.io.IOException;
